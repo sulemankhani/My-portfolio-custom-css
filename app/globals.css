@@ -1,0 +1,39 @@
+/* Global Variables */
+:root {
+    --bg-color: #e9edf0;
+    --text-color: #18233d;
+    --btn-color: #c3450b;
+    --section-color: #cddcf4;
+    --font-regular: 400;
+    --font-semibold: 600;
+    --font-bold: 700;
+  }
+html,
+body {
+  padding-top: 30px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Poppins, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

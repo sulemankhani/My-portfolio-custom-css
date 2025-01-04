@@ -1,0 +1,127 @@
+.section {
+    background-color: var(--bg-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+  }
+  
+  .leftContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .divider {
+    width: 100px;
+    height: 3px;
+    background-color: #93c5fd;
+    margin: 1rem auto;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .button {
+    background-color: #c3450b;
+    color: #e9edf0;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    background-color: #e9edf0;
+    color: #18233d;
+  }
+  
+  .rightContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    object-fit: cover;
+    border-radius: 0.375rem;
+    width: 100%;
+    max-width: 720px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .leftContainer {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    .button {
+      padding: 0.5rem 1.25rem;
+      font-size: 1rem;
+    }
+  
+    .rightContainer {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.75rem;
+    }
+  
+    .description {
+      font-size: 0.95rem;
+    }
+  
+    .button {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+    }
+  }
+  
