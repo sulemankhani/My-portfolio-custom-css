@@ -15,7 +15,7 @@ const Contact = () => {
         </div>
         <div className={style.formContainer}>
           <form
-            action="https://formspree.io/f/{form_id}"
+            action=""
             method="POST"
             className={style.form}
           >
